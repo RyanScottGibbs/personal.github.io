@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+});
+
+
+
 // Theme toggle button.
 document.querySelector(".btn-toggle").addEventListener("click", function () {
 
@@ -13,14 +19,18 @@ document.querySelector(".btn-toggle").addEventListener("click", function () {
 
 function setLight() {
     document.querySelector('.navbar').classList.remove('navbar-dark');
-    document.querySelector('.navbar').classList.remove('bg-dark');
     document.querySelector('.navbar').classList.add('navbar-light');
-    document.querySelector('.navbar').classList.add('bg-light');
+    document.querySelectorAll('.bg-dark').forEach(item => {
+        item.classList.toggle('bg-light');
+        item.classList.toggle('bg-dark');
+    });
 }
 
 function setDark() {
     document.querySelector('.navbar').classList.add('navbar-dark');
-    document.querySelector('.navbar').classList.add('bg-dark');
     document.querySelector('.navbar').classList.remove('navbar-light');
-    document.querySelector('.navbar').classList.remove('bg-light');
+    document.querySelectorAll('.bg-light').forEach(item => {
+        item.classList.toggle('bg-dark');
+        item.classList.toggle('bg-light');
+    });
 }

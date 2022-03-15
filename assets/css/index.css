@@ -23,3 +23,13 @@ body {
     background: var(--background-color);
     color: var(--text-color)
 }
+
+.img-bg {
+    background: #58719e;
+    height: 300px;
+    width: 300px;
+}
+
+.text-indent {
+    text-indent: 10%;
+}
