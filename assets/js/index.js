@@ -2,11 +2,8 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("year").innerHTML = new Date().getFullYear();
 });
 
-
-
 // Theme toggle button.
 document.querySelector(".btn-toggle").addEventListener("click", function () {
-
     if (document.body.classList.contains("dark-theme")) {  
         setLight();
     } else {
@@ -24,6 +21,12 @@ function setLight() {
         item.classList.toggle('bg-light');
         item.classList.toggle('bg-dark');
     });
+    document.querySelectorAll('.card.text-light').forEach(item => {
+        item.classList.toggle('text-light');
+        item.classList.toggle('text-dark');
+    });
+
+    document.querySelector(".btn-toggle").innerHTML = "Toggle Dark Mode";
 }
 
 function setDark() {
@@ -33,4 +36,10 @@ function setDark() {
         item.classList.toggle('bg-dark');
         item.classList.toggle('bg-light');
     });
+    document.querySelectorAll('.card.text-dark').forEach(item => {
+        item.classList.toggle('text-light');
+        item.classList.toggle('text-dark');
+    });
+
+    document.querySelector(".btn-toggle").innerHTML = "Toggle Light Mode";
 }

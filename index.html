@@ -18,7 +18,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <a class="navbar-brand" href="#"><button class="btn btn-outline-secondary btn-toggle">Toggle Dark Mode</button></a>
+                    <a id="darkModeToggle"class="navbar-brand" href="#"><button class="btn btn-outline-secondary btn-toggle">Toggle Dark Mode</button></a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -39,14 +39,11 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid col px-4 py-5">
+        <div class="container-fluid col px-4 py-5 welcome-banner">
             <div class="row flex align-items-center g-5 py-5">           
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3"><span class="intro-text">Hello,</span> <span class="slide-in">I'm Ryan Gibbs.</span></h1>
-                    <p class="lead">I'm a freelance full stack developer based in the United States.</p>
-                </div>
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="assets/img/ryan.jpg" class="d-block mx-auto img-fluid rounded-circle img-thumbnail" alt="Ryan Image" width="400" loading="lazy">
+                <div class="col-8 mx-auto text-center">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 shadow-sm text-light"><span class="intro-text">Hello,</span> <span class="slide-in">I'm Ryan Gibbs.</span></h1>
+                    <h5 class="lead shadow-sm text-light typing">I'm a freelance full stack developer based in the United States.</h5>
                 </div>
             </div>
         </div>
@@ -54,11 +51,12 @@
             <div class="row flex align-items-center g-5 py-5">
                 <a id="about"></a>
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <h1 class="mb-3 d-flex justify-content-center">
+                    <img src="assets/img/ryan.jpg" class="d-block mx-auto img-fluid rounded-circle img-thumbnail" alt="Ryan Image" width="400" loading="lazy">
+                    <!-- <h1 class="mb-3 d-flex justify-content-center">
                         <div class="img-bg d-flex d-inline-block align-items-center justify-content-center rounded-circle text-white fw-bold display-1">
                             { }
                         </div>
-                    </h1>
+                    </h1> -->
                 </div>
                 <div class="col-lg-6">
                     <p class="mb-5 text-indent">
@@ -79,27 +77,44 @@
                     <p class="mb-3 d-flex justify-content-center">Visual Studio, Git, Microsoft Office Suite, Access, Sage 50 Accounting, Misys ERP, vTiger CRM</p>
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="assets/img/banner.jpg" class="d-block mx-auto img-fluid img-thumbnail" alt="Landscape Image" loading="lazy">
+                    <h1 class="mb-3 d-flex justify-content-center">
+                        <div class="img-bg d-flex d-inline-block align-items-center justify-content-center rounded-circle text-white fw-bold display-1">
+                            { }
+                        </div>
+                    </h1>
+                    <!-- <img src="assets/img/banner.jpg" class="d-block mx-auto img-fluid img-thumbnail" alt="Landscape Image" loading="lazy"> -->
                 </div>
             </div>
         </div>
         <div class="container-fluid col py-5 bg-light">
-            <div class="row flex align-items-center g-5 py-5">
+            <div class="row flex align-items-center">
                 <a id="work"></a>
-                <div class="col-6 m-3">
-                    <h3 class="mb-5">Sample Projects</h3>
+                <h3 class="mb-5">Sample Projects</h3>
+                <div class="col">
                     <a href="https://ryanscottgibbs.github.io/MountainAdventures/" target="_blank" alt="Mountain Adventures" class="text-decoration-none text-reset">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card text-dark bg-light border border-5 rounded mx-auto" style="width: 18rem;">
                             <img src="assets/img/mountainAdventure.png" class="card-img-top" alt="Mountain Adventures Screenshot">
                             <div class="card-body">
                                 <h5>Mountain Adventures Project</h5>
-                                <p class="card-text">An buisness webpage mockup using HMTL, JS and CSS.</p>
+                                <p>An buisness webpage mockup using HMTL, JS and CSS.</p>
+                            </div>
+                        </div>
+                    </a>              
+                </div>
+                <div class="col">
+                    <a href="https://codepen.io/persononfire/pen/jObaZGR" target="_blank" alt="Baby Yoda" class="text-decoration-none text-reset">
+                        <div class="card text-dark bg-light border border-5 rounded mx-auto" style="width: 18rem;">
+                            <img src="assets/img/babyYoda.png" class="card-img-top" alt="Baby Screenshot">
+                            <div class="card-body">
+                                <h5>Baby Yoda</h5>
+                                <p>A simple CSS Baby Yoda, just for fun.</p>
                             </div>
                         </div>
                     </a>              
                 </div>
             </div>
         </div>
+        
         <div class="container-fluid col px-4 py-5">
             <div class="row flex align-items-center g-5 py-5">
                 <a id="contact"></a>

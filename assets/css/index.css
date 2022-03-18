@@ -23,6 +23,23 @@ body {
     text-indent: 10%;
 }
 
+.welcome-banner {
+    background: var(--background-color);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
 .intro-text {
     animation-name: intro-animation;
     animation-duration: 4s;
@@ -31,6 +48,15 @@ body {
 .slide-in {
     animation-name: slide-in;
     animation-duration: 5s;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 6s steps(40, end);
+    
 }
 
 @keyframes intro-animation {
@@ -62,5 +88,23 @@ body {
         opacity: 100;
         position: relative;
         top: 0; 
+    }
+}
+
+@keyframes typing {
+    0% { 
+        width: 0;
+        opacity: 0;
+    }
+    30% { 
+        width: 0;
+        opacity: 0;
+    }
+    31% { 
+        width: 0;
+        opacity: 100%;
+    }
+    100% { 
+        width: 100% 
     }
 }
