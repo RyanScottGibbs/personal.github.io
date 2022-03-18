@@ -34,9 +34,9 @@ body {
     background-repeat: no-repeat;
 }
 
-.card-img-top {
+.card-img-top, .card-body {
     width: 100%;
-    height: 15vw;
+    height: 18vw;
     object-fit: cover;
 }
 
